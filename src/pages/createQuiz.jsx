@@ -1,6 +1,6 @@
 import { useState } from "react";
 import QuizForm from "./quizForm";
-import "./CreateQuiz.css";
+import "./createQuiz.css";
 
 function CreateQuiz({ isModalOpen, onClose }) {
   const [quizData, setQuizData] = useState({ title: "", type: "" });
