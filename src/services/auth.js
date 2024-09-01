@@ -19,3 +19,23 @@ export const register = async({name,email,password,confirmpassword}) =>{
         return new Error (error.response.data.message);
     }
 }
+
+export const login = async({email, password})=>{
+    try{
+        const response = await axios.post(`${BACKEND_URL}/auth/login`,{
+            email,
+            password
+        },{
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+                }
+        });
+        if (response.data && response.data.token) {
+            localStorage.setItem('token', response.data.token);
+        }
+        return response;
+    }
+    catch(error){
+        return new Error (error.response.data.message);
+    }
+}

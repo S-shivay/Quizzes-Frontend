@@ -1,0 +1,171 @@
+/* General Popup Styling */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    width: 600px; /* Adjust width for better spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  /* Question Navigation Styling */
+  .question-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .question-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #ddd;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .question-number.active {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .add-question-btn {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #28a745;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .max-questions-info {
+    font-size: 14px;
+    text-align: right;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  /* Input Styling */
+  input[type="text"] {
+    width: calc(100% - 20px); /* 100% width with some margin from sides */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+  }
+  
+  /* Option Type Section */
+  .option-type {
+    margin-bottom: 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .option-type input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  .option-type label {
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  
+  /* Options and Timer Sections */
+  .options-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .options-left {
+    width: 60%;
+  }
+  
+  .options-left input[type="text"] {
+    width: 80%;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .options-left input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  /* Timer Section */
+  .timer-group {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .timer-group input[type="radio"] {
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .timer-group label {
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  
+  /* Button Group */
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  button {
+    padding: 10px;
+    min-width: 100px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  button.cancel {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
